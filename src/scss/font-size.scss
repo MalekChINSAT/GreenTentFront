@@ -1,0 +1,51 @@
+// Font Size in Design System
+.f-14px {
+  font-size: 14px !important;
+}
+h6 {
+  font-size: 18px !important;
+}
+
+h5 {
+  font-size: 20px !important;
+}
+
+h4 {
+  font-size: 24px !important;
+}
+
+h3 {
+  font-size: 32px !important;
+}
+
+h2 {
+  font-size: 40px !important;
+}
+h1 {
+  font-size: 48px !important;
+}
+
+// Responsive FontSize
+@media (max-width: 1600px) {
+  .f-14px {
+    font-size: 0.8vw !important;
+  }
+  h5 {
+    font-size: 0.9375vw !important;
+  }
+  h3 {
+    font-size: 1.8vw !important ;
+  }
+}
+
+@media (max-width: 1300px) {
+  .f-14px {
+    font-size: 10px !important;
+  }
+  h5 {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 20px !important ;
+  }
+}

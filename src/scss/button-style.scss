@@ -1,0 +1,11 @@
+$border-radius-half: 5px;
+// Used in html
+.button-design {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  color: white;
+  border-radius: $border-radius-half;
+  background-color: #416bff !important;
+}

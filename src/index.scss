@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './scss/background-theme.scss';
+@import './scss/button-style.scss';
+@import './scss/color-text.scss';
+@import './scss/font-size.scss';
+@import './scss/box-shadow.scss';
+
+:root {
+  --text-color-darkblue: #1E293B; //dark blue
+  --bg-color-blue: #043e53; //blue
+  --bg-color-light: #FBFDFB //very light
+  --bg-color-green: #A2B699; //green
+  --bg-color-bege: rgb(235,233,223) //bege: light color background
+  //usage: text-[color:var(--text-color-1)]
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  background-clip: content-box;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: #bdbdbdbb;
+  }
+}
