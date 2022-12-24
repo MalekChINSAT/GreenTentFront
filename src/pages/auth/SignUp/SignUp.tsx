@@ -52,7 +52,7 @@ const SignUp: FC<SignUpProps> = () => {
       <Link
         key={"signin"}
         to={'/auth/sign-in'}
-        className="underline t-2 text-center tracking-tight text-gray-500 text-sm  hover:text-[#1E293B]"
+        className="underline t-2 text-center tracking-tight text-[#D56D2E] text-sm  hover:text-[#1E293B]"
       >
         Already a member? Login.
       </Link>
