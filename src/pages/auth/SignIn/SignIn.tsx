@@ -57,6 +57,7 @@ const SignIn: FC<SignInProps> = () => {
 
       <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="py-6 px-4 box-shadow sm:rounded-lg sm:px-4" style={{ backgroundColor: "rgb(214 227 208)" }}>
+
           <form
             className="space-y-4"
             action="#"
@@ -123,6 +124,17 @@ const SignIn: FC<SignInProps> = () => {
                 className="flex w-full justify-center rounded-md border border-transparent bg-[#043e53] py-2 px-4 text-sm font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1E293B]focus:ring-offset-2"
               >
                 Sign in
+              </button>
+            </div>
+            <div class="flex items-center justify-center space-x-2 my-5">
+              <span class="h-px w-48 bg-gray-300"></span>
+              <span class="text-gray-400 font-normal">or</span>
+              <span class="h-px w-48 bg-gray-300"></span>
+            </div>
+            <div className="mb-3">
+              <button className="text-sm font-medium flex flex-wrap justify-center text-[#043e53] w-full border border-[#043e53] hover:border-gray-500 px-2 py-1.5 rounded-md">
+                <img className="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" />
+                Sign in with Google
               </button>
             </div>
           </form>

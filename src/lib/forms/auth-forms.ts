@@ -22,7 +22,7 @@ export const signUpFormSchema = yup.object().shape({
   name: yup.string().min(5).max(128).required(),
   password: yup
     .string()
-    .test('len', 'Must be empty or 8-32 characters length', validatePassword),
+    .test('len', 'Must not be empty or 8-32 characters length', validatePassword),
 });
 
 export const signInFormSchema = yup.object().shape({
