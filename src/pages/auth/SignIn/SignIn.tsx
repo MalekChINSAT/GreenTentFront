@@ -48,15 +48,15 @@ const SignIn: FC<SignInProps> = () => {
   // SET CUSTOM ERROR MSGS BY CHECKING errors.<field-name>.type (required, maxLength, ..)
 
   return (
-    <div className="flex flex-col justify-center" style={{ backgroundColor: "#FBFDFB" }}>
+    <div className="flex flex-col justify-center " style={{ backgroundColor: "#EBE9DF", paddingTop:"5px" }}>
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h4 className="mt-2 text-xl text-center font-bold tracking-tight text-[#043e53]" style={{ marginTop: 0 }}>
+        <h4 className="mt-2 text-4xl text-center tracking-tight text-[#043e53] font-bold" style={{ marginTop: 0 }}>
           Welcome Back!
         </h4>
       </div>
 
       <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="py-6 px-4 box-shadow sm:rounded-lg sm:px-4" style={{ backgroundColor: "rgb(214 227 208)" }}>
+        <div className="py-6 px-4 box-shadow sm:rounded-lg sm:px-4 rounded-md border border-[#043e53]  bg-white">
 
           <form
             className="space-y-4"
@@ -126,10 +126,10 @@ const SignIn: FC<SignInProps> = () => {
                 Sign in
               </button>
             </div>
-            <div class="flex items-center justify-center space-x-2 my-5">
-              <span class="h-px w-48 bg-gray-300"></span>
-              <span class="text-gray-400 font-normal">or</span>
-              <span class="h-px w-48 bg-gray-300"></span>
+            <div className="flex items-center justify-center space-x-2 my-5">
+              <span className="h-px w-48 bg-gray-300"></span>
+              <span className="text-gray-400 font-normal">or</span>
+              <span className="h-px w-48 bg-gray-300"></span>
             </div>
             <div className="mb-3">
               <button className="text-sm font-medium flex flex-wrap justify-center text-[#043e53] w-full border border-[#043e53] hover:border-gray-500 px-2 py-1.5 rounded-md">
@@ -143,7 +143,7 @@ const SignIn: FC<SignInProps> = () => {
       <Link
         key={"signup"}
         to={'/auth/sign-up'}
-        className="mt-2 text-center tracking-tight text-gray-500 text-sm font-medium hover:text-[#1E293B]"
+        className="underline mt-2 text-center tracking-tight text-gray-500 text-sm font-medium hover:text-[#1E293B]"
       >
         Don't have an account? Sign up.
       </Link>

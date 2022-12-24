@@ -10,7 +10,7 @@ const Auth: FC<AuthProps> = () => {
     <>
       <Navbar />
       <main className="flex-1">
-        <div className="py-4 bg-[#FBFDFB] min-h-screen">
+        <div className="py-4 bg-[#EBE9DF] min-h-screen">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
             <Outlet />
           </div>

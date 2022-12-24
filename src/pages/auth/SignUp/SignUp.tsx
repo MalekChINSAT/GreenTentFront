@@ -43,8 +43,7 @@ const SignUp: FC<SignUpProps> = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center py-10 sm:px-6 lg:px-8"
-      style={{ backgroundColor: "#fbfdfb" }}>
+    <div className="flex flex-col justify-center py-10 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h4 className="mt-2 text-xl text-center font-bold tracking-tight text-[#043e53]" style={{ marginTop: 0 }}>
           Create your account with us!
@@ -53,12 +52,12 @@ const SignUp: FC<SignUpProps> = () => {
       <Link
         key={"signin"}
         to={'/auth/sign-in'}
-        className="mt-2 text-center tracking-tight text-gray-500 text-sm  hover:text-[#1E293B]"
+        className="underline t-2 text-center tracking-tight text-gray-500 text-sm  hover:text-[#1E293B]"
       >
         Already a member? Login.
       </Link>
       <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-6 px-4 shadow sm:rounded-lg sm:px-10" style={{ backgroundColor: "rgb(214 227 208)" }}>
+        <div className="bg-white py-6 px-4 shadow sm:rounded-lg sm:px-10 rounded-md border border-[#043e53]">
           <form
             className="space-y-4"
             action="#"
