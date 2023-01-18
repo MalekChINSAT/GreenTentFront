@@ -10,8 +10,8 @@ export const SearchCamp: FC<HomeProps> = () => {
 
 
 	return (
-		<section id="section2" className="relative px-2 py-2 md:px-0">
-			<div className="absolute -top-10 left-6 z-[9999] rounded-full text-sm border border-[#A2B699] bg-gray-50 container flex max-w-6xl mx-auto xl:px-5 space-x-4 p-8">
+		<section id="section2" className="relative px-2 py-2 md:px-0" style={{ paddingTop: "80px"}}>
+			<div className="absolute top-5 left-6 z-[9999] rounded-full text-sm border border-[#A2B699] bg-gray-50 container flex max-w-5xl mx-auto space-x-4 p-7">
 
 				<form>
 					{/*<h5 className='text-xs uppercase mb-2'>Where to?</h5>*/}
@@ -49,7 +49,7 @@ export const SearchCamp: FC<HomeProps> = () => {
 					<div className="relative">
 						<div className="absolute inset-y-0 left-0 flex items-center pl-5 mr-2.5 pointer-events-none">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 dark:text-[#A2B699]">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+								<path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
 							</svg>
 						</div>
 						<input className="rounded-full block w-full p-4 pl-12 text-sm border  bg-gray-50  border-[#A2B699]" placeholder="Add guests" required />
@@ -62,8 +62,8 @@ export const SearchCamp: FC<HomeProps> = () => {
 				</button>
 			</div>
 
-			<div className="bg-indigo-300 h-screen w-full rounded-full">
-				<img className="object-cover h-screen w-full rounded-lg" src="https://images.unsplash.com/photo-1608942103455-14a983cff341?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHVuaXNpYSUyMGNhbXB8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=1024&q=80" />
+			<div className="h-screen w-full rounded-full bg-[#EBE9DF]">
+				<img className="object-cover h-5/6 w-full rounded-lg" src="https://vramanholidays.com/wp-content/uploads/2017/10/patrick-hendry-1500x600.jpg" />
 			</div>
 
 

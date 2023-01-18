@@ -22,7 +22,6 @@ const SignIn: FC<SignInProps> = () => {
     defaultValues: {
       email: '',
       password: '',
-      rememberMe: false,
     },
     mode: 'all',
     resolver: yupResolver(signInFormSchema),
@@ -110,7 +109,6 @@ const SignIn: FC<SignInProps> = () => {
                   id="remember-me"
                   type="checkbox"
                   className="h-4 w-4  rounded border-gray-300 text-slate-600 focus:ring-slate-500"
-                  {...register('rememberMe')}
                 />
                 <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
                   Remember me
@@ -132,10 +130,10 @@ const SignIn: FC<SignInProps> = () => {
               <span className="h-px w-48 bg-gray-300"></span>
             </div>
             <div className="mb-3">
-              <button className="text-sm font-medium flex flex-wrap justify-center text-[#043e53] w-full border border-[#043e53] hover:border-gray-500 px-2 py-1.5 rounded-md">
+              <a href="http://localhost:3000/auth/google" className="text-sm font-medium flex flex-wrap justify-center text-[#043e53] w-full border border-[#043e53] hover:border-gray-500 px-2 py-1.5 rounded-md">
                 <img className="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" />
                 Sign in with Google
-              </button>
+              </a>
             </div>
           </form>
         </div>

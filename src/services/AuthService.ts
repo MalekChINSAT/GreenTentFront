@@ -6,13 +6,13 @@ export default class AuthService {
   static BASE_ROUTE = '/auth';
 
   static signIn(data: SignInFormType, signal?: AbortSignal) {
-    return firstAPI.post(`${this.BASE_ROUTE}/sign-in`, data, {
+    return firstAPI.post(`${this.BASE_ROUTE}/login`, data, {
       signal,
     });
   }
 
   static signUp(data: SignUpFormType, signal?: AbortSignal) {
-    return firstAPI.post(`${this.BASE_ROUTE}/sign-up`, data, {
+    return firstAPI.post(`${this.BASE_ROUTE}/signup`, data, {
       signal,
     });
   }

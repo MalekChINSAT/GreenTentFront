@@ -1,10 +1,10 @@
 import { faker } from '@faker-js/faker';
 import { rest } from 'msw';
 
-const BASE_URL = '/api/auth';
+const BASE_URL = '/auth';
 
 export default [
-  rest.post(`${BASE_URL}/sign-up`, (_req, res, ctx) => {
+  rest.post(`${BASE_URL}/signup`, (_req, res, ctx) => {
     const data = {
       accessToken: '12345678',
       user: {

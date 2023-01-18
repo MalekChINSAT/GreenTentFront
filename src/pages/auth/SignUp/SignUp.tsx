@@ -20,9 +20,9 @@ const SignUp: FC<SignUpProps> = () => {
     reset,
   } = useForm({
     defaultValues: {
-      agreeToTerms: false,
+      //agreeToTerms: false,
       email: '',
-      name: '',
+      username: '',
       password: '',
     },
     mode: 'all',
@@ -66,19 +66,19 @@ const SignUp: FC<SignUpProps> = () => {
           >
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Name
+                Username
               </label>
               <div className="mt-1">
                 <input
                   id="name"
                   type="text"
                   className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-slate-500 focus:outline-none focus:ring-slate-500 sm:text-sm"
-                  {...register('name')}
+                  {...register('username')}
                 />
               </div>
-              {errors.name && (
+              {errors.username && (
                 <p className="first-letter:uppercase mt-1 text-red-500 text-sm italic">
-                  {errors.name.message}
+                  {errors.username.message}
                 </p>
               )}
             </div>
@@ -128,7 +128,7 @@ const SignUp: FC<SignUpProps> = () => {
                   id="agree-to-terms"
                   type="checkbox"
                   className="h-4 w-4 rounded border-gray-300 text-slate-600 focus:ring-slate-500"
-                  {...register('agreeToTerms')}
+
                 />
                 <label
                   htmlFor="agree-to-terms"
